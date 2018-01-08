@@ -1,5 +1,4 @@
-
-		$(function(){
+	$(function(){
 			init();
 			$("#goKyaraten, #tailMore").on("click",function(){
 				var kyaratenUrl = "https://play.google.com/store/apps/details?id=net.listensoft.kyaraten";
@@ -15,8 +14,8 @@
 		function getDetailInfo(){
 			loading();
 			var skinNo = urlParam("k");
-			//var apiUrl = "https://api.kyaraten.com/api/v1/skin/"+skinNo;
-			var apiUrl = "http://112.216.240.202:18888/api/v1/skin/"+skinNo;
+			var apiUrl = "https://api.kyaraten.com/api/v1/skin/"+skinNo;
+			//var apiUrl = "http://112.216.240.202:18888/api/v1/skin/"+skinNo;
 			$.ajax({
 				type:"get",
 				url: apiUrl,
